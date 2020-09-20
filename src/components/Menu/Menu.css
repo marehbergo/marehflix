@@ -1,0 +1,24 @@
+.Menu {
+  width: 100%;
+  height: 96px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  background-color: var(--black);
+}
+
+.Logo {
+  height: 40px;
+}
+@media (max-width: 800px) {
+  .Logo {
+    max-width: 105px;
+  }
+}
