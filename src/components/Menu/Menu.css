@@ -10,15 +10,46 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 16px;
-  background-color: var(--black);
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background: var(--black);
+  border-bottom: 2px solid var(--primary);
 }
 
 .Logo {
-  height: 40px;
+  max-width: 168px;
 }
 @media (max-width: 800px) {
   .Logo {
-    max-width: 105px;
+    max-width: 104px;
+  }
+}
+
+body {
+  --bodyPaddingTop: 96px;
+  padding-top: var(--bodyPaddingTop);
+}
+@media (max-width: 800px) {
+  .Menu {
+    height: 40px;
+    justify-content: center;
+  }
+  body {
+    --bodyPaddingTop: 40px;
+    padding-top: var(--bodyPaddingTop);
+  }
+}
+
+@media (max-width: 800px) {
+  a.ButtonLink {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary);
+    border-radius: 0;
+    border: 0;
+    text-align: center;
   }
 }
